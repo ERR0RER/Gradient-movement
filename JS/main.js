@@ -92,3 +92,31 @@ AddColorButton.addEventListener('click', function(){
 	console.log(ColorSTR);
 	console.log(ColorMS);
 })
+
+var Reset = document.getElementById('ResetColor');
+
+Reset.addEventListener('click', function(){
+	root.style.setProperty('--color-mass', '#f00, #ffa500, #00f, #4b0082, #ee82ee')
+})
+
+
+var Save = document.getElementById('SaveColor');
+var Delete = document.getElementById('DeleteColor');
+
+Save.addEventListener('click', function(){
+localStorage.setItem('ColorMass', ColorSTR);
+})
+
+Delete.addEventListener('click', function(){
+	localStorage.removeItem('ColorMass');
+})
+
+window.onload = function(){
+	var savedColors = localStorage.getItem('ColorMass');
+
+	if(savedColors){
+		root.style.setProperty('--color-mass', savedColors);
+        ColorMS = savedColors.replace(/#/g, '').split(', ');
+        ColorSTR = savedColors;
+	}
+}

@@ -78,7 +78,7 @@ footer {
 .Select-Color {
 	display: flex;
 	align-items: center;
-	width: 60%;
+	width: 100%;
 }
 
 .color-window {
@@ -155,6 +155,23 @@ input[type=range]::-moz-range-thumb {
 .addButton {
 	margin-left: 50px;
 }
+
+.ResetButton {
+	margin-left: 50px;
+}
+.ResetColor {
+	height: 30px;
+	width: 100px;
+	border-radius: 20px;
+	border: 2px solid white;
+	cursor: pointer;
+	background:white;
+}
+.ResetColor:hover{
+	background: #f00;
+	box-shadow: 0 0 20px #ff0000;
+}
+
 .AddColor {
 	height: 30px;
 	width: 100px;
@@ -170,3 +187,28 @@ input[type=range]::-moz-range-thumb {
 	background-position: 100% 100%;
 	color: white;
 }
+.SaveDelete {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-left: 30px;
+}
+.SaveColor, .DeleteColor {
+	width: 50px;
+	height: 20px;
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+	border: 2px white solid;
+	border-radius: 10px;
+}
+.SaveColor:hover {
+	background:lime;
+	box-shadow: 0 0 10px lime;
+}
+.DeleteColor:hover {
+	background:red;
+	box-shadow: 0 0 15px red;
+	color: white;
+}
+
