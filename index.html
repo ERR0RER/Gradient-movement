@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/main.css">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<main>
+
+		<div class="main-window"></div>
+
+	</main>
+
+	<footer>
+
+		<div class="select-side">
+			<select name="select" id="side">
+				<option value="to left" selected>Left</option>
+				<option value="to top">Top</option>
+				<option value="to right">Right</option>
+				<option value="to bottom">Bottom</option>
+			</select>
+		</div>
+
+		<div class="Select-Color">
+
+			<div class="color-window"></div>
+			<div class="range-color">
+				<input id="color-red" class="color-red" type="range" min="0" max="255" value="100" step="1" name="range1">
+				<input id="color-green" class="color-green" type="range" min="0" max="255" value="100" step="1" name="range2">
+				<input id="color-blue" class="color-blue" type="range" min="0" max="255" value="100" step="1" name="range3">
+			</div>
+			<div class="addButton">
+				<button id="AddColor" class="AddColor"><b style="font-size: 12px;">Submit</b></button>
+			</div>
+		</div>
+
+	</footer>
+
+	<script src="JS/main.js"></script>
+</body>
+
+</html>
